@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="wrapper">
+        <u><h1>Details of the registered users</h1></u>
+    <div class="container">
+
+        <% if(Data){ %>
+            <%for(let i =0;i < Data.length; i++) {%>
+    <div class="user-datss">  
+                <p>name:<%= Data[i].name %></p>
+               <p>phone:<%= Data[i].phone %></p> 
+                <p>email:<%= Data[i].email %></p> 
+     </div>
+     <% } %> 
+     <%  } %>
+    </div>
+</div>
+</body>
+</html>
